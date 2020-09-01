@@ -1,15 +1,13 @@
 // 1. Apertura menù (diventa display: block)
-var hambMenu = $(".fa-bars");
-hambMenu.click(
+$(".header-right a>i.fa-bars").click(
   function () {
-    $(".hamburger-menu").show("slow");
+    $(".hamburger-menu").addClass("active");
   }
 );
 
 // 2. Chiusura menù (ritorno a display: none)
-var closeAll = $(".fa-times");
-closeAll.click(
-  function () {
-    $(".hamburger-menu").hide("fast");
+$(".hamburger-menu a>i.fa-times").click(
+  function() {
+    $(".hamburger-menu").removeClass("active");
   }
 );
